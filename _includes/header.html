@@ -1,0 +1,17 @@
+<!-- Header section -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if page.header-img %}
+    <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
+    {% endif %}
+    <meta property="og:description" content="{{ page.subtitle }}" />
+    
+    <link rel="stylesheet" href="{{ site.url }}/sass/style.css">
+    <link rel="stylesheet" href="{{ '/sass/menu.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/sass/footer.css' | relative_url }}">
+    
+    <link rel="icon" href="{{ site.url }}/images/logo (1).png">
+    <title>Emily Zou</title>
+</head>

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<!-- Blog Section: List of Posts -->
+<div class="picture">
+    <img src="{{site.url}}/images/computer-1.png" alt="">
+</div>
+
+<main>
+
+
+<section class="s2 grid s5">
+    
+    <h2>Projects</h2>
+  <div class="four-boxes">
+     
+      {% for post in paginator.posts %}
+      <div class="box">
+      <div class="box-image">
+            {{ post.image }}
+      </div>
+      <div class="box-text">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p class="excerpt">{{ post.description | truncatewords: 25 }}</p>
+      </div>
+    </div>
+      {% endfor %}
+    
+      <div class="pagination">
+          {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
+          {% endif %}
+      
+          <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      
+          {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
+          {% endif %}
+      </div>
+  </div>
+</section>
+
+</main>

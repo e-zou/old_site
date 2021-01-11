@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<!-- Post: What individual posts look like. -->
+
+<main>
+<section class="grid individPost">
+  <!-- makes a top-div margin -->
+  <!-- <div class="picture"></div> -->
+  <br/>
+  <br/>
+  <div class="breadcrumbs">
+      <a href="{{site.baseurl}}/projects/index.html"><p>Projects</p></a><!-- changes to the home directory -->
+      <p>&nbsp;/ Article</p>
+  </div>
+  
+  <div class="post-wrap">
+    <!-- TO DO: Fix how this looks-->
+      <article class="post">
+        <header class="post-header">
+          <h2 class="post-title special_h2">{{ page.title | escape }}</h2>
+          <p class="post-meta">
+            <div class="post-date"> <p>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              {{ page.date | date: date_format }} | By: Emily Zou
+              </p>
+            </div>
+          </p>
+        </header>
+      
+        <div class="post-content">
+          {{ content }}
+        </div>
+        
+        <div class="pagination">
+            {% if page.previous.url %}
+                <a href="{{ page.previous.url }}" class="previous">&laquo; Older Post</a>
+                
+            {% endif %}
+            {% unless page.previous.url %}
+              <div class="olderPostLink_hidden"></div>
+            {% endunless %}
+        
+            {% if page.next.url %}
+                <a href="{{ page.next.url }}" class="next">More Recent Post&raquo;</a>
+            {% endif %}
+        </div>
+
+        <!-- {%- if site.disqus.shortname -%}
+          {%- include disqus_comments.html -%}
+        {%- endif -%} -->
+      
+        <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+      </article>
+  </div>
+</section>
+</main>

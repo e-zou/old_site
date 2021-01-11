@@ -1,0 +1,18 @@
+# Site settings
+title: Personal Website
+email: 
+author: Emily Zou
+description: 
+url:
+
+# Build settings
+sass:
+  sass_dir: sass
+
+# Paginate
+paginate: 5
+paginate_path: "/projects/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-paginate

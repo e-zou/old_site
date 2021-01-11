@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header section -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta property="og:description" content="" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/sass/style.css">
+    <link rel="stylesheet" href="/sass/menu.css">
+    <link rel="stylesheet" href="/sass/footer.css">
+    
+    <link rel="icon" href="http://localhost:4000/images/logo (1).png">
+    <title>Emily Zou</title>
+</head>
+    <body>
+        <div class="navbar grid">
+    <a class="logo"href="/index.html"><img class="logo-pic" src="http://localhost:4000/images/logo (1).png" alt="">Emily<br>Zou</a>
+    <input type="checkbox" class="checkbox" name="" id="open">
+    <div class="middle">
+        <a href="http://localhost:4000/about.html" class="">About</a>
+        <a href="http://localhost:4000/projects/index.html" class="">Projects</a>
+        <a href="http://localhost:4000/gallery.html" class="">Gallery</a>
+        <a href="#contact" class="contactHidden">Contact</a>
+    </div>
+    <a href="#contact" class="contact">Contact</a>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</div>
+
+        <!-- Post: What individual posts look like. -->
+
+<main>
+<section class="grid individPost">
+  <!-- makes a top-div margin -->
+  <!-- <div class="picture"></div> -->
+  <br/>
+  <br/>
+  <div class="breadcrumbs">
+      <a href="/projects/index.html"><p>Projects</p></a><!-- changes to the home directory -->
+      <p>&nbsp;/ Article</p>
+  </div>
+  
+  <div class="post-wrap">
+    <!-- TO DO: Fix how this looks-->
+      <article class="post">
+        <header class="post-header">
+          <h2 class="post-title special_h2">My Personal Website</h2>
+          <p class="post-meta">
+            <div class="post-date"> <p>May 3, 2019 | By: Emily Zou
+              </p>
+            </div>
+          </p>
+        </header>
+      
+        <div class="post-content">
+          <p><img src="http://localhost:4000/images/logo.png" alt="photo" class="post-picture" /></p>
+
+<h1 id="inspiration">Inspiration</h1>
+<p>Before I started this project, I was afraid of coding things. As someone who started CS in college, I felt insignificant compared to my classmates, who always seemed to have more experience and talent than me. Although I attempted to build my own app or Chrome extension, I never seemed to get anywhere. It was just plain frustrating because I was trying so hard. I was looking at videos, reading tutorials, attending class, but the results just seemed to tell me that I was dumb.</p>
+
+<p>Lucky for me, I’m an optimist at heart, and I was adamant to find another way to learn. During my 2018 summer, I took a deep dive into front-end web development through my internship with HackCville and Astraea. I got to learn HTML, CSS, PHP, Javascript, Wordpress, UI/UX, and so much more. Equipped with the new knowledge of Jekyll, a static-site building engine, and a surge of confidence, I finally started to build my very own website, which I dreamed of doing since I started as a CS student.</p>
+
+<h1 id="how-i-built-it">How I Built it</h1>
+<p>The specific toolset I used for this website are: HTML, SASS, GitHub, and Jekyll, which included YAML front matter. Throughout the year, I used GitHub to store my code and host the website, Figma to build wireframes, and asked friends to give me critques.</p>
+
+<p>Overall, this is a static website and does not have any back-end components. I choose this route, because it was simple to build, flexible to change, and I would not have to spend money for back-end hosting. My goal was to practice with the foundations of website-making. That’s why I used my own custom CSS as opposed to using frameworks such as Bootstrap and Google Material UI.</p>
+
+<p>The project roughly took me the whole year- not because I didn’t know how to code but rather because designing became very time-consuming. I wanted to make everything look perfect, which kept me revising the designs. I went through at least four drastically different drafts for this project because none of them fully represented who I am and who I wanted to be. The funny part is that in the end, I still have so many things that I wanted to change.</p>
+
+<p>The process in which I built the website followed the basic UI/UX wheel. It went from ideation and free-styling many designs to narrowing down something that I liked. From there, I went into the analysis phase in which I put into consideration the reasons I wanted to build the website: to act as an online portfolio for employers and share some personal facts about myself. After that was the implemenation phase. I coded the subjectively-judged best high-fidelity wireframe, starting from the boiler-plate essentials to adding default styles and text to custom descriptions and images. I also got feedback from friends and evaluated my designs, too. Of course, the phases are very fluid, and most of the time, I was in a constant loop of adding a section and asking myself “Does it look good? Does it fit my purpose?”</p>
+
+<h1 id="lessons-learned">Lessons Learned</h1>
+<p>The biggest lessons I got out of the project were: it’s really fun starting from scratch, good code takes time, and learn from others before you. Like turning a blank sheet of paper into a beautiful narrative in writing, I found great joy from transforming an empty screen into many lines of code. And because I was not building this for a grade, the project became a source of relaxation.</p>
+
+
+        </div>
+        
+        <div class="pagination">
+            
+                <a href="/2019/04/06/hackathon.html" class="previous">&laquo; Older Post</a>
+                
+            
+            
+        
+            
+                <a href="/2019/07/24/RevTek.html" class="next">More Recent Post&raquo;</a>
+            
+        </div>
+
+        <!---->
+      
+        <a class="u-url" href="/2019/05/03/personal-website.html" hidden></a>
+      </article>
+  </div>
+</section>
+</main>
+        <!-- Footer & Scripts -->
+
+<div class="footer" id="contact">
+
+    <div class="contact-info">
+        <h2 class="special_h2">Get in Touch</h2>
+        <form action="https://formspree.io/ez6ah@virginia.edu" class="contact_form" method="POST">
+    
+            <div class="fill">
+                <input name="name" placeholder="Name: (i.e. Jane Smith)">
+            </div>
+            <div class="fill">
+                <input name="email" type="email" placeholder="Email: (i.e. mail@example.com)">
+            </div>
+            <div class="fill">
+                <div class="contact-icons">
+                    <!-- Copied and pasted svg files from images folder -->
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/e-zou">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve" width="60px" height="60px">
+                            <ellipse cx="19.5" cy="19" rx="1.5" ry="2"/>
+                            <ellipse cx="10.5" cy="19" rx="1.5" ry="2"/>
+                            <path d="M25.472,9.634c0.224-0.368,0.531-1.085,0.531-2.446C26.003,5.141,25.316,4,25.316,4c-1.069,0-3.58,0.432-5.657,2.499  C18.184,6.132,16.61,6,15.003,6c-1.574,0-3.115,0.087-4.562,0.405C10.348,6.319,7.762,4,4.659,4c-1.04,2.431-0.62,4.46-0.25,5.572  c-1.493,1.6-2.407,3.804-2.407,6.74c0,7.267,4.59,9.688,13,9.688s13-2.421,13-9.688C28.003,13.476,27.036,11.264,25.472,9.634z   M15.006,24L15.006,24c-0.001,0-0.002,0-0.003,0S15.001,24,15,24v0c-6.651-0.001-8.994-1.976-8.994-6.028  c0-2.47,1.478-4.472,4-4.472c1.303,0.014,3.452,0.499,4.997,0.5c1.545-0.001,3.694-0.486,4.997-0.5c2.522,0,4,2.002,4,4.472  C24,22.024,21.657,23.999,15.006,24z"/>
+                        </svg>
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/emily-zou/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="60px" height="60px">
+                            <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/>
+                        </svg>
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/emitheegg/">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve" width="60px" height="60px">
+                        <g>
+                            <circle cx="15" cy="15" r="4"/>
+                            <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"/>
+                        </g>
+                        </svg>
+                    </a>
+
+                    <!-- <a target="_blank" rel="noopener noreferrer" href="https://github.com/e-zou"><img src="http://localhost:4000/images/icons8-github-60.png" alt=""></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/emily-zou/"><img src="http://localhost:4000/images/icons8-linkedin-2-60.png" alt=""></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/emitheegg/"><img src="http://localhost:4000/images/icons8-instagram-50.png" alt=""></a> -->
+                    
+                </div>
+                <textarea name="message" data-gramm_editor="false" placeholder="Message: (i.e. What do you want to chat about?)" rows="9"></textarea>
+            </div>
+            <div class="fill">
+                <input id="submit" name="submit" type="submit" value="Submit">
+                <input type="hidden" name="_next" value="/thanks.html" />
+                <input type="text" name="_gotcha" style="display:none" />
+            </div>
+    
+        </form> 
+    </div>
+
+    
+                    
+
+</div>
+
+<link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700|Coda|Concert+One|Play:300,400,700" rel="stylesheet">
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+    </body>
+</html>
